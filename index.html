@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link
@@ -14,18 +11,14 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css">
   </head>
 
-  <body style="
-background: #00d2ff;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #928DAB, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-">
+  <body>
     <!--navbar and nav for the header-->
 
     <!--scrollspy to update the active menu link when the user scrolls.-->
-    <nav id="navbar-example2" class="navbar navbar-dark bg-dark px-3" style="position: fixed; z-index:2; width: 100vw">
+    <nav id="navbar-example2" class="navbar navbar-dark bg-dark px-3">
       <a class="navbar-brand" href="#">Navbar</a>
       <ul class="nav nav-pills">
         <li class="nav-item">
@@ -61,7 +54,7 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
     >
 
 <!--Main section-->
-      <h4 id="scrollspyHeading1" class="display-3  pt-5" style="text-align: center">Home</h4>
+      <h4 id="scrollspyHeading1" class="display-3  pt-5">Home</h4>
       <section class="projects container d-flex justify-content-center mt-5">
         
         <div class="main d-flex flex-column justify-content-center ">
@@ -75,7 +68,7 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
         </div>
 
         <picture>
-          <img src="./assets/img/pexels-andrea.jpg" alt="" style="border-radius: 50%; width: 30vw; max-width: 350px; height: 30vh;max-height: 350px; box-shadow: #928DAB">
+          <img id="picimg" src="./assets/img/pexels-andrea.jpg" alt="...">
         </picture>
 
       </section>
@@ -83,11 +76,11 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
 
 
       <!--Cards-->
-      <h4 id="scrollspyHeading2" class="display-3" style="text-align: center">Projects</h4>
+      <h4 id="scrollspyHeading2" class="display-3">Projects</h4>
       <section class="projects container d-flex justify-content-center ">
-        <div class="row container pt-2" style="width: 90vw">
+        <div id="cardcont" class="row container pt-2">
           <div class="mb-3 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-            <div class="card" style="width: 100%">
+            <div class="card cardgr">
               <img src="Img/Card 1.png" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -106,12 +99,12 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
                     <span class="badge bg-info text-dark">JavaScript</span>
                   </li>
                 </ul>
-                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
               </div>
             </div>
           </div>
           <div class="mb-3 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-              <div class="card" style="width: 100%">
+              <div class="card cardgr">
                 <img src="Img/Card 2.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -130,12 +123,12 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
                       <span class="badge bg-info text-dark">JavaScript</span>
                     </li>
                   </ul>
-                  <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
+                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
                 </div>
               </div>
           </div>
           <div class="mb-3 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                <div class="card" style="width: 100%">
+                <div class="card cardgr">
                   <img src="Img/Card 3.png" class="card-img-top" alt="..." />
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -155,12 +148,12 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
                     <span class="badge bg-info text-dark">JavaScript</span>
                   </li>
                 </ul>
-                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
+                <button  type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
                   </div>
                 </div>
           </div>
           <div class="mb-3 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                  <div class="card" style="width: 100%">
+                  <div class="card cardgr">
                     <img src="Img/Card 4.png" class="card-img-top" alt="..." />
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -180,12 +173,12 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
                     <span class="badge bg-info text-dark">JavaScript</span>
                   </li>
                 </ul>
-                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
                     </div>
                   </div>
           </div>
           <div class="mb-3 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                    <div class="card" style="width: 100%">
+                    <div class="card cardgr">
                       <img src="Img/Card 5.png" class="card-img-top" alt="..." />
                       <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -205,12 +198,12 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
                     <span class="badge bg-info text-dark">JavaScript</span>
                   </li>
                 </ul>
-                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
                       </div>
                     </div>
           </div>
           <div class="mb-3 col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                      <div class="card" style="width: 100%">
+                      <div class="card cardgr">
                         <img src="Img/Card 1.png" class="card-img-top" alt="..." />
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
@@ -230,7 +223,7 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
                     <span class="badge bg-info text-dark">JavaScript</span>
                   </li>
                 </ul>
-                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
                         </div>
                       </div>
           </div>
@@ -238,10 +231,10 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
   
       </section>
       <!--Form-->
-      <h4 id="scrollspyHeading3" class="display-3" style="text-align: center">Contact me</h4>
+      <h4 id="scrollspyHeading3" class="display-3">Contact me</h4>
       <form class="container" action="https://formspree.io/f/meqwnzey" method="post">
 
-        <p style="color:#fff"><strong>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!</strong></p>
+        <p id="descCont"><strong>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!</strong></p>
   
         <div class="row">
 
