@@ -1,0 +1,32 @@
+nav {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+}
+
+#scrollspyHeading1,
+#scrollspyHeading2,
+#scrollspyHeading3 {
+  text-align: center;
+}
+
+#picimg {
+  border-radius: 50%;
+  width: 30vw;
+  max-width: 350px;
+  height: 30vh;
+  max-height: 350px;
+  box-shadow: #928dab;
+}
+
+#cardcont {
+  width: 90vw;
+}
+
+#cardgr {
+  width: 100%;
+}
+
+#descCont {
+  color: #fff;
+}
