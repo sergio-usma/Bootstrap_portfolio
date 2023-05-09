@@ -25,14 +25,14 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
     <!--navbar and nav for the header-->
 
     <!--scrollspy to update the active menu link when the user scrolls.-->
-    <nav id="navbar-example2" class="navbar navbar-dark bg-dark px-3">
+    <nav id="navbar-example2" class="navbar navbar-dark bg-dark px-3" style="position: fixed; z-index:2; width: 100vw">
       <a class="navbar-brand" href="#">Navbar</a>
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading1">Projects</a>
+          <a class="nav-link" href="#scrollspyHeading1">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading2">Contact me</a>
+          <a class="nav-link" href="#scrollspyHeading2">Projects</a>
         </li>
         <li class="nav-item dropdown">
           <a
@@ -45,15 +45,9 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
           >
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="#scrollspyHeading3">Third</a>
+              <a class="dropdown-item" href="#scrollspyHeading3">Contact me</a>
             </li>
-            <li>
-              <a class="dropdown-item" href="#scrollspyHeading4">Fourth</a>
-            </li>
-            <li><hr class="dropdown-divider" /></li>
-            <li>
-              <a class="dropdown-item" href="#scrollspyHeading5">Fifth</a>
-            </li>
+
           </ul>
         </li>
       </ul>
@@ -65,8 +59,31 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
       class="scrollspy-example "
       tabindex="0"
     >
+
+<!--Main section-->
+      <h4 id="scrollspyHeading1" class="display-3" style="text-align: center">Home</h4>
+      <section class="projects container d-flex justify-content-center mt-5">
+        
+        <div class="main d-flex flex-column justify-content-center ">
+
+        <h1>I’m Alexandra.
+          Glad to see you!</h1>
+
+      <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
+      </p>
+
+        </div>
+
+        <picture>
+          <img src="./assets/img/pexels-andrea.jpg" alt="" style="border-radius: 50%; width: 30vw; max-width: 350px; height: 30vh;max-height: 350px; box-shadow: #928DAB">
+        </picture>
+
+      </section>
+
+
+
       <!--Cards-->
-      <h4 id="scrollspyHeading1">Projects</h4>
+      <h4 id="scrollspyHeading2" class="display-3" style="text-align: center">Projects</h4>
       <section class="projects container d-flex justify-content-center ">
         <div class="row container pt-2" style="width: 90vw">
           <div class="mb-3 col-lg-4 col-md-6 col-sm-12 col-xs-12">
@@ -221,28 +238,44 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
   
       </section>
       <!--Form-->
-      <h4 id="scrollspyHeading2">Contact me</h4>
-      <form class="container" action="https://formspree.io/f/meqwnzey" method="post" novalidate>
+      <h4 id="scrollspyHeading3" class="display-3" style="text-align: center">Contact me</h4>
+      <form class="container" action="https://formspree.io/f/meqwnzey" method="post">
 
         <p style="color:#fff"><strong>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!</strong></p>
   
         <div class="row">
+
           <div class="col">
+            <label for="name" class="form-label"
+            >Name</label
+            >
             <input
+                    id="name"
+                    name="name"
               type="text"
               class="form-control"
               placeholder="First name"
               aria-label="First name"
+                    required
             />
           </div>
+
           <div class="col">
+            <label for="lastname" class="form-label"
+            >Last Name</label
+            >
             <input
+              id="lastname"
+              name="lastname"
               type="text"
               class="form-control"
               placeholder="Last name"
               aria-label="Last name"
+              required
             />
           </div>
+
+
         </div>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label"
@@ -253,6 +286,7 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
             class="form-control"
             id="exampleFormControlInput1"
             placeholder="name@example.com"
+            required
           />
         </div>
         <div class="mb-3">
@@ -263,74 +297,11 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
             class="form-control"
             id="exampleFormControlTextarea1"
             rows="3"
+            required
           ></textarea>
         </div>
         <button type="submit" class="btn btn-success">Submit</button>
-          
-      </form>
-      <h4 id="scrollspyHeading3">Third heading</h4>
-      <p>...</p>
-      <h4 id="scrollspyHeading4">Fourth heading</h4>
-      <p>...</p>
-      <h4 id="scrollspyHeading5">Fifth heading</h4>
-      <p>...</p>
-    </div>
 
-    <!--cards for the list of portfolio projects.-->
-
-    
-
-    <!--buttons-->
-
-    <button type="button" class="btn btn-success">Dowloand</button>
-
-    <!--badges for the list of technologies.-->
-
-    <span class="badge bg-primary">Primary</span>
-    <span class="badge bg-secondary">Secondary</span>
-    <span class="badge bg-success">Success</span>
-    <span class="badge bg-danger">Danger</span>
-    <span class="badge bg-warning text-dark">Warning</span>
-    <span class="badge bg-info text-dark">Info</span>
-    <span class="badge bg-light text-dark">Light</span>
-    <span class="badge bg-dark">Dark</span>
-
-    <!--modals for the popup window with the project details.-->
-
-    <!--CARD 1-->
-    <div id="card1" class="modal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header d-flex flex-column">
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-            <img src="Img/Card 1.png" class="card-img-top" alt="..." />
-            <h5 class="modal-title">Tonic</h5>
-          </div>
-          <div class="modal-body">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 
-              the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting 
-              industry.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--the grid system to place elements inline with others.-->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
