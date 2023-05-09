@@ -89,8 +89,7 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
                     <span class="badge bg-info text-dark">JavaScript</span>
                   </li>
                 </ul>
-                
-                <a href="#" class="btn btn-primary">See project</a>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
               </div>
             </div>
           </div>
@@ -114,7 +113,7 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
                       <span class="badge bg-info text-dark">JavaScript</span>
                     </li>
                   </ul>
-                  <a href="#" class="btn btn-primary">See project</a>
+                  <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
                 </div>
               </div>
           </div>
@@ -139,7 +138,7 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
                     <span class="badge bg-info text-dark">JavaScript</span>
                   </li>
                 </ul>
-                    <a href="#" class="btn btn-primary">See project</a>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
                   </div>
                 </div>
           </div>
@@ -164,7 +163,7 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
                     <span class="badge bg-info text-dark">JavaScript</span>
                   </li>
                 </ul>
-                      <a href="#" class="btn btn-primary">See project</a>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
                     </div>
                   </div>
           </div>
@@ -189,7 +188,7 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
                     <span class="badge bg-info text-dark">JavaScript</span>
                   </li>
                 </ul>
-                        <a href="#" class="btn btn-primary">See project</a>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
                       </div>
                     </div>
           </div>
@@ -214,7 +213,7 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
                     <span class="badge bg-info text-dark">JavaScript</span>
                   </li>
                 </ul>
-                          <a href="#" class="btn btn-primary">See project</a>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#card1">See project</button>
                         </div>
                       </div>
           </div>
@@ -223,7 +222,7 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
       </section>
       <!--Form-->
       <h4 id="scrollspyHeading2">Contact me</h4>
-      <form class="container" action="" novalidate>
+      <form class="container" action="https://formspree.io/f/meqwnzey" method="post" novalidate>
 
         <p style="color:#fff"><strong>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!</strong></p>
   
@@ -298,20 +297,25 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
 
     <!--modals for the popup window with the project details.-->
 
-    <div class="modal" tabindex="-1">
+    <!--CARD 1-->
+    <div id="card1" class="modal" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
+          <div class="modal-header d-flex flex-column">
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
+            <img src="Img/Card 1.png" class="card-img-top" alt="..." />
+            <h5 class="modal-title">Tonic</h5>
           </div>
           <div class="modal-body">
-            <p>Modal body text goes here.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 
+              the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting 
+              industry.
+            </p>
           </div>
           <div class="modal-footer">
             <button
@@ -321,15 +325,10 @@ background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, F
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
     </div>
-
-    <!--Bootstrap forms components to create the contact form.-->
-    
-    
 
     <!--the grid system to place elements inline with others.-->
 
